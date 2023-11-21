@@ -1,0 +1,132 @@
+:root{
+    /* COLORS */
+    --main-color: #ebebeb;
+
+    /* MARGES */
+    --marge-small: 20px;
+    --marge-medium: 40px;
+    
+    /* FONTS */
+    --alternate-font: Helvetica, arial, sans-serif, "Market Sans";
+}
+
+body {
+    background-color: var(--main-color);
+    margin: 0 auto;
+    font-family: arial;
+    font-size: 15px;
+}
+
+table {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+table, tr, td {
+    border: 0px;
+    border-spacing: 0;
+    border-collapse: 0;
+}
+
+.header {
+    height: 60px;
+    background-color: #ffffff;
+}
+
+.info-coupon{
+    background: #f8e376 url(../img/bg_portada_1200.jpg) no-repeat top left;
+    padding: 20px;
+}
+
+.info-coupon h1, .info-coupon p, .info-coupon a{
+    width: 50%;
+}
+
+.info-envio {
+  background: #f8e376 url(../img/bg_envio_1200.jpg) no-repeat top left;
+  padding: 20px;
+}
+
+.info-envio h1, .info-envio p, .info-envio a{
+    width: 50%;
+}
+
+h1, .info{
+    margin: 0;
+    padding: 0 0 10px 0;
+    font-family: var(--alternate-font);
+    color: #aa5404;
+    font-weight: bold;
+    font-size: 32px;
+    line-height: 35px;
+}
+
+.info{
+    font-size: 15px;
+    line-height: 20px;
+}
+
+h2{
+    color: #592E13;
+    font-family: var(--alternate-font);
+}
+
+.info-promo{
+    background-color: #ffffff;
+    font-family: var(--alternate-font);    
+    color: #592E13;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 20px;
+    padding: 20px;
+}
+
+.header td{
+    padding: 0 20px;
+}
+
+.top-menu{
+    font-family: var(--alternate-font); 
+    color: #777777;
+    text-decoration: none;
+    font-weight: normal;
+    font-size: 10px;
+    line-height: 13px;
+}
+
+.menu{
+    font-family: var(--alternate-font); 
+    color: #666666;
+    padding-left: 6px;
+    font-size: 13px;
+    line-height: 26px;
+    font-weight: normal;
+}
+
+.menu span{
+    display: inline-block;
+    padding-right: 10px;
+}
+
+.btn-aceptar, .btn-prova, .btn-ir{
+    font-family: var(--alternate-font); 
+    font-weight: normal;
+    font-size: 15px;
+    color: #aa5404;
+    border: 1px solid #aa5404;
+    text-decoration: none;
+    padding: 10px;
+}
+
+.condicions{
+    background-color: #ffffff;
+    font-family: var(--alternate-font);
+    font-size: 13px;
+    text-align: justify;
+    padding: 20px;
+}
+
+ul li{
+    margin-bottom: 15px;
+}
+
