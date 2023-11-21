@@ -1,0 +1,216 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,100;1,200;1,400;1,500;1,600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css');
+
+/* General styles */
+/*--------------------------------*/
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+    font-family: 'Popping', sans-serif;
+}
+body{
+    background-color: #d57e12;
+}
+#page{
+    position:relative;
+    min-height:100vh;
+    background: radial-gradient(#f9d349, 20%, #d57e12);
+    
+    padding:0 5%;
+}
+
+/* Header */
+/*--------------------------------*/
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 0 30px;
+}
+header #title{
+    display:block;
+    font-size: 2rem;
+    font-weight: 600;
+    text-decoration: none;
+    color:white;
+}
+
+/* Navigation Menú*/
+/*--------------------------------*/
+nav ul li{
+    list-style:none;
+    display:inline-block;
+}
+nav ul li a{
+    text-decoration: none;
+    color:white;
+    margin-left:60px;
+    font-size: 15px;
+    font-weight: 600;
+    border-bottom:2px solid transparent;
+    transition:.4s;
+}
+nav ul li:not(:last-child) a:hover,
+nav ul li:not(:last-child) a:focus{
+    border-bottom: 2px solid white;
+}
+
+nav ul li.active a{
+    border-bottom: 2px solid white;
+}
+nav ul li.btn a{
+    background: transparent;
+    color:white;
+    border:1px solid #f5dca8;
+    padding: 9px 20px;
+    border-radius: 30px;
+    line-height: 1.4;
+    font-size:14px;
+    font-weight: 500;
+    margin-left:150px;
+}
+nav ul li.btn:hover a{
+    border:1px solid white;
+    color:black;
+    background: white;
+    transition: .4s;
+}
+
+/* Main content */
+/*--------------------------------*/
+main{
+    padding-top:1rem;
+    position:relative;
+}
+.main-text{
+    position:relative;
+    z-index: 2;
+    margin-bottom:50px;
+}
+.main-text h6{
+    font-size: 14px;
+    font-weight: 400;
+    color:white;
+    margin-bottom: 40px;
+}
+.main-text h1{
+    font-size: 4rem;
+    line-height: 1;
+    color:white;
+    margin:0 0 1rem 0px;
+    font-family: 'Permanent Marker';
+}
+.main-text h3{
+    font-size: 18px;
+    font-weight: 600;
+    color:white;
+}
+.main-text p{
+    max-width: 100%;
+    width: 480px;
+    color: white;
+    line-height: 1.8;
+    font-size:15px;
+    margin-bottom: 50px;
+}
+
+/* Buttons */
+/*--------------------------------*/
+.main-panel-buttons{
+    position:relative;
+    z-index: 2;
+}
+.main-panel-buttons a{
+    display:inline-block;
+    text-decoration:none;
+    color:black;
+    background: white;
+    border: 1px solid white;
+    padding: 9px 25px;
+    line-height: 1.4;
+    border-radius: 30px;
+    font-size:14px;
+    font-weight: 500;
+}
+.main-panel-buttons  a:hover{
+    transform: scale(1.2);
+    border:1px solid #f5dca8;
+    background: transparent;
+    color: white;
+    transition: .4s;
+}
+.main-panel-buttons a.btn-watch{
+    border: 1px solid #f5dca8;
+    color:white;
+    background: transparent;
+    margin-left:20px
+}
+.main-panel-buttons a.btn-watch{
+    color:black;
+    background: white;
+    border: 1px solid white;
+    transition: .4s;
+}
+.main-panel-buttons a.btn-watch i{
+    margin-right: 12px;
+}
+
+/* Footer - Social Media */
+/*--------------------------------*/
+#social-media{
+    position:relative;
+    z-index:2;
+    margin-top:8rem;
+    padding-bottom: 1rem;
+}
+#social-media a{
+    display: inline-block;
+    color:#f5dcac;
+    margin-right:25px;
+    font-size:24px;
+}
+#social-media a:hover{
+    transform: scale(1.2);
+    
+}
+
+/* Background web */
+/*--------------------------------*/
+#bg-page{
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    height: 85%;
+    bottom: 0;
+    right: 0;
+    display: flex;
+    justify-content: right;
+}
+#bg-page img{
+    height: 100%;
+    object-fit: cover;
+}
+
+@media screen and (max-width:900px) {
+    header{
+        display: block;
+    }
+    nav ul li{
+        display:block;
+    }
+    #bg-page{
+        overflow: hidden;
+    }
+    #bg-page img{ 
+        opacity: 0.1;
+        transition: opacity 0.5s ease;
+    }
+    .main-panel-buttons{
+        text-align: center;
+    }
+    footer{
+        text-align: center;
+    }
+}

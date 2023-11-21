@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+	<meta charset="utf-8">
+	<title>CSS grid</title>
+	<style media="screen">
+		.container {
+			display: grid;
+			grid-template-columns: auto auto auto auto;
+			grid-template-rows: 20vh 80vh 20vh;
+			/*un hueco libre lo definimos com un punto "." */
+			grid-template-areas:
+				"logo . menu menu"
+				"post post post sidebar"
+				"footer footer footer sidebar";
+		}
+
+		* {
+			color: white;
+			text-align: center;
+		}
+
+		.logo {
+			background: pink;
+			grid-area: logo;
+		}
+
+		.menu {
+			background: coral;
+			grid-area: menu;
+		}
+
+		.post {
+			background: #2196F3;
+			grid-area: post;
+		}
+
+		.sidebar {
+			background: orange;
+			grid-area: sidebar;
+		}
+
+		.footer {
+			background: navy;
+			grid-area: footer;
+		}
+	</style>
+</head>
+
+<body>
+
+	<div class="container">
+		<div class="logo">LOGO</div>
+		<div class="menu">MENU</div>
+		<div class="post">POST</div>
+		<div class="sidebar">SIDEBAR</div>
+		<div class="footer">FOOTER</div>
+	</div>
+
+</body>
+
+</html>

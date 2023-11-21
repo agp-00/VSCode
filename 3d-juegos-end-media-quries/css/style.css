@@ -1,0 +1,150 @@
+@import url('normalize.css');
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+body{
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	padding: 0 5%;
+	background-color: #172947;
+}
+
+header{
+	background-color: black;
+	min-height: 80px;
+	padding:0.5rem 1rem;
+}
+header .form{
+	width: 100%;
+	text-align: right;
+}
+header input{
+	width: 60%;
+	font-size: 1.2rem;
+}
+header button{
+	padding: 5px;;
+}
+nav{
+
+	background-color: 	#256892;
+	text-align: center;
+
+}
+nav a{
+	color:white;
+	font-size: 1.1rem;
+	text-decoration: none;
+	padding: 0 1rem;
+
+	display:block;
+	margin-top: 0.5rem;
+}
+nav a:last-child{
+	border-right:0;
+}
+nav a:hover{
+	color:yellow;
+}
+main{
+	color:white;
+	/* display: flex;
+	justify-content: space-between; */
+	background-color: black;
+}
+main .main-article{
+	/* width: 65%;
+	padding-right: 30%; */
+
+	background-image: url('../img/final.jpg');
+	background-size: contain;
+	background-repeat:no-repeat;
+}
+.main-article h1{
+	color:#ee2f2f;
+	margin-top: 4rem;
+}
+.main-article h2{
+	margin-bottom: 3rem;
+}
+.main-article p{
+	text-align: justify;
+	padding: 5px;
+	background-color: rgba(0, 0, 0, 0.5);
+	line-height: 1.4rem;
+}
+
+main aside h3{
+	padding: 1rem 0;
+}
+main aside article{
+	display: flex;
+	justify-content: start;
+	margin-top:2rem
+}
+main aside article img{
+	width: auto;
+	height: auto;
+}
+main aside article p{
+	padding-left: 0.6rem;
+	text-align: justify;
+}
+footer {
+	background-color: black;
+	color:rgb(94, 93, 93);
+	text-align:center;
+}
+footer .copyright{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+footer .copyright img{
+	width: 10rem;
+}
+
+@media (min-width:560px){
+	/*Media queries del header */
+	header{
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		padding:0rem 1rem;
+	}
+	header .form{
+		width: 70%;
+	}
+
+	/*Media queries de navigation */
+	nav{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		background:url('../img/bg_menu.png') repeat;
+		height: 30px;
+	}
+
+	nav a{
+		border-right: 1px solid white;
+	}
+	
+	/*Media queries de main */
+	main{
+		display: flex;
+		justify-content: space-between;
+	}
+	main .main-article{
+		width: 65%;
+		padding-right: 30%; 
+	}
+	main aside{
+		width: 35%;
+	}
+	
+}
+

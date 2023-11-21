@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        body{
+            margin: 0;
+            padding: 0;
+        }
+        html{
+            --color-header:orange;
+            --color-main:rgb(152, 218, 152);
+            --color-article:rgb(153, 153, 226);
+            --color-footer:rgb(170, 168, 168);
+            --unit-gap:0rem;
+           
+        }
+        header, main, article, footer{
+            border:1px solid black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        #page{
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            grid-template-rows: 20vh 20vh 20vh 20vh 20vh;
+            /*Suponemos que hay 3 columnas y 5 filas*/
+            /* grid-template-areas:
+                "a-header a-header a-header"
+                "a-main a-main a-article-1"
+                "a-main a-main a-article-2"
+                "a-main a-main a-article-3"
+                "a-footer a-footer a-footer"
+            ; */
+
+            grid-template-areas:
+                "a-header a-header"
+                "a-main a-article-1"
+                "a-main a-article-2"
+                "a-main a-article-3"
+                "a-footer a-footer"
+            ;
+            gap: var(--unit-gap);
+
+        }
+
+        header{
+            background-color: var(--color-header);
+            grid-area: a-header;
+        }
+        main{
+            background-color: var(--color-main);
+            grid-area: a-main;
+        }
+        .article-1{
+            background-color: var(--color-article);
+            grid-area: a-article-1;
+        }
+        .article-2{
+            background-color: var(--color-article);
+            grid-area: a-article-2;
+        }
+        .article-3{
+            background-color: var(--color-article);
+            grid-area: a-article-3;
+        }
+        footer{
+            background-color: var(--color-footer);
+            grid-area: a-footer;
+        }
+    </style>
+
+</head>
+<body>
+
+    <div id="page">
+        <header>HEADER</header>
+        <main>MAIN</main>
+        <article class="article-1">ARTICLE 1</article>
+        <article class="article-2">ARTICLE 2</article>
+        <article class="article-3">ARTICLE 3</article>
+        <footer>FOOTER</footer>
+    </div>
+    
+</body>
+</html>
